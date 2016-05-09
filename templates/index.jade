@@ -1,0 +1,62 @@
+- var manifest = htmlWebpackPlugin.files.manifest
+doctype
+<!--[if lt IE 7 ]><html lang="en" class="ie6" manifest=manifest><![endif]-->
+<!--[if IE 7 ]><html lang="en" class="ie7" manifest=manifest><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie8" manifest=manifest><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie9" manifest=manifest><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+html.no-js(lang="en", manifest=manifest)
+  <!--<![endif]-->
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
+    title
+      | #{htmlWebpackPlugin.options.title} | #{htmlWebpackPlugin.options.subtitle}
+    meta(name="description", content=htmlWebpackPlugin.options.description)
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    each file, index in htmlWebpackPlugin.files.css
+      link(href=file, rel="stylesheet")
+  body
+    if (htmlWebpackPlugin.options.appMountId)
+      .container(id=htmlWebpackPlugin.options.appMountId)
+
+    header.header
+      h1.title
+        a.title-link(href="#") Adam Bergman
+
+    nav.navigation
+      a.nav-item-link(href="#") Projects
+      span.nav-divider
+      a.nav-item-link(href="#") Contact
+
+    .container
+      section#hero
+        .hero
+          h2 Full stack developer – Node, React, Angular, HTML, CSS
+
+      section#projects
+        .project
+          h2 Soon to come ...
+        .project
+          h2 Soon to come ...
+
+    .container
+      section#contact
+        .column
+          h3 Produced by
+          p
+            a(href="http://fransvilhelm.com/") Adam Bergman
+        .column
+          h3 Contact
+          ul
+            li
+              a(href="#") GitHub
+            li
+              a(href="#") Twitter
+            li
+              a(href="#") Facebook
+            li
+              a(href="#") freeCodeCamp
+
+    each file, key in htmlWebpackPlugin.files.chunks
+      script(src=file.entry)

@@ -1,0 +1,33 @@
+.navigation {
+  position: fixed;
+  top: 50%;
+  left: 45px;
+  width: 65px;
+  font-family: 'Lato';
+  font-weight: 700;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.navigation-nav {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item-link {
+  display: inline-block;
+  color: $color-black;
+  font-size: 1.125em;
+  line-height: 20px;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+.nav-divider {
+  display: inline-block;
+  margin: 15px auto;
+  width: 45px;
+  height: 3px;
+  vertical-align: middle;
+  background: $color-brand;
+}
