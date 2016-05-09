@@ -1,0 +1,41 @@
+.project {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Lato';
+}
+
+.project-image {
+  display: block;
+  margin: 10px auto;
+  vertical-align: baseline;
+  width: 75%;
+  clip-path: polygon(8% 0, 90% 11%, 100% 89%, 0% 100%);
+}
+
+.project-title {
+  margin: 10px auto;
+}
+
+.project-list {
+  padding: 0 25px;
+  list-style: none;
+}
+
+.project-list-item {}
+
+.project-text {
+  margin: 0;
+  padding: 0 25px;
+}
+
+.project-link {
+  color: $color-black;
+  text-decoration: none;
+  transition: color 0.3s;
+  &:hover {
+    color: $color-brand;
+  }
+}
+

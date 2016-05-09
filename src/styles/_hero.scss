@@ -1,0 +1,24 @@
+#hero {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 100vh;
+  z-index: 999;
+}
+
+.hero-title {
+  font-family: 'Lato';
+  font-weight: 900;
+  font-size: 1.5rem;
+  z-index: 999;
+}
+
+.hero-svg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  fill: $color-brand;
+  z-index: -1;
+}

@@ -20,25 +20,40 @@ html.no-js(lang="en", manifest=manifest)
     if (htmlWebpackPlugin.options.appMountId)
       .container(id=htmlWebpackPlugin.options.appMountId)
 
-    header.header
-      h1.title
-        a.title-link(href="#") Adam Bergman
-
     nav.navigation
       a.nav-item-link(href="#") Projects
       span.nav-divider
       a.nav-item-link(href="#") Contact
 
+    header.header
+      h1.title
+        a.title-link(href="#") Adam Bergman
+
     .container
       section#hero
+        svg.hero-svg#hero-svg(viewBox="0 0 375 250", xmlns="http://www.w3.org/2000/svg", xmlns:bx="http://www.boxy-svg.com/bx")
+          path(d="M 85 0 L 0 156 L 110 250 L 375 58 L 85 0 Z", bx:origin="0.5 0.5")
         .hero
-          h2 Full stack developer – Node, React, Angular, HTML, CSS
+          h2.hero-title Full stack developer – Node, React, Angular, HTML, CSS
 
+    .container
       section#projects
         .project
-          h2 Soon to come ...
+          img.project-image(src="http://placehold.it/150x150")
+          h2.project-title Project 1
+          ul.project-list
+            li.project-list-item <strong>Company:</strong> Acme<br>
+            li.project-list-item <strong>Techniques:</strong> Vanilla javascript, HTML, CSS
+          p.project-text
+            a.project-link(href="#") See it live &gt;
         .project
-          h2 Soon to come ...
+          img.project-image(src="http://placehold.it/150x150")
+          h2.project-title Project 2
+          ul.project-list
+            li.project-list-item <strong>Company:</strong> Acme<br>
+            li.project-list-item <strong>Techniques:</strong> Vanilla javascript, HTML, CSS
+          p.project-text
+            a.project-link(href="#") See it live &gt;
 
     .container
       section#contact
