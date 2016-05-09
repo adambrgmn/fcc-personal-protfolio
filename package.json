@@ -49,7 +49,7 @@
     "webpack-merge": "^0.12.0"
   },
   "dependencies": {
-    "gsap": "^1.18.4",
+    "jquery": "^2.2.3",
     "normalize.css": "^4.1.1"
   }
 }

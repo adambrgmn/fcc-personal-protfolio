@@ -1,0 +1,28 @@
+#contact {
+  margin: 50px 0 0 0;
+  border-top: 1px solid $color-brand;
+  padding: 50px 0 100px 0;
+  font-family: 'Lato';
+  font-weight: 400;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
+.contact-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contact-list-item {
+  margin-bottom: 10px;
+}
+
+.contact-list-link {
+  color: $color-black;
+  text-decoration: none;
+}

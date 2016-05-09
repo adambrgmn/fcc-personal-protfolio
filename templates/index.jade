@@ -21,9 +21,9 @@ html.no-js(lang="en", manifest=manifest)
       .container(id=htmlWebpackPlugin.options.appMountId)
 
     nav.navigation
-      a.nav-item-link(href="#") Projects
+      a.nav-item-link(href="#projects") Projects
       span.nav-divider
-      a.nav-item-link(href="#") Contact
+      a.nav-item-link(href="#contact") Contact
 
     header.header
       h1.title
@@ -32,7 +32,7 @@ html.no-js(lang="en", manifest=manifest)
     .container
       section#hero
         svg.hero-svg#hero-svg(viewBox="0 0 375 250", xmlns="http://www.w3.org/2000/svg", xmlns:bx="http://www.boxy-svg.com/bx")
-          path(d="M 85 0 L 0 156 L 110 250 L 375 58 L 85 0 Z", bx:origin="0.5 0.5")
+          polygon.polygon(points="85 0, 0 156, 110 250, 375 58")
         .hero
           h2.hero-title Full stack developer – Node, React, Angular, HTML, CSS
 
@@ -57,21 +57,16 @@ html.no-js(lang="en", manifest=manifest)
 
     .container
       section#contact
-        .column
-          h3 Produced by
-          p
-            a(href="http://fransvilhelm.com/") Adam Bergman
-        .column
-          h3 Contact
-          ul
-            li
-              a(href="#") GitHub
-            li
-              a(href="#") Twitter
-            li
-              a(href="#") Facebook
-            li
-              a(href="#") freeCodeCamp
+        h3.contact-title Contact
+        ul.contact-list
+          li.contact-list-item
+            a.contact-list-link(href="#") GitHub
+          li.contact-list-item
+            a.contact-list-link(href="#") Twitter
+          li.contact-list-item
+            a.contact-list-link(href="#") Facebook
+          li.contact-list-item
+            a.contact-list-link(href="#") freeCodeCamp
 
     each file, key in htmlWebpackPlugin.files.chunks
       script(src=file.entry)
