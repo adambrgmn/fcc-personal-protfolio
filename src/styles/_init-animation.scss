@@ -1,0 +1,36 @@
+html {
+  position: relative;
+}
+
+html::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $color-brand;
+  animation: initAnimation 2s normal forwards;
+  animation-delay: 1s;
+}
+
+@keyframes initAnimation {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+
+  50% {
+    width: 100vw;
+    height: 3px;
+    top: 50vh;
+    transform: translateY(-50%);
+  }
+
+  100% {
+    width: 0;
+    height: 3px;
+    top: 50vh;
+    transform: translateY(-50%);
+  }
+}

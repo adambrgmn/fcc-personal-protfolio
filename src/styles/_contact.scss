@@ -25,4 +25,9 @@
 .contact-list-link {
   color: $color-black;
   text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $color-brand;
+  }
 }

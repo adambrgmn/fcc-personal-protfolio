@@ -1,0 +1,9 @@
+.header, .navigation {
+  transition: top 0.3s ease-in-out;
+}
+
+.show-hide {
+  @include mobileOnly {
+    top: -60px;
+  }
+}
